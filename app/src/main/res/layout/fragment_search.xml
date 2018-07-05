@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="ng.apk.vhire.ui.search.SearchFragment">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+
+        android:background="@color/colorPrimaryDark"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            app:title="VHire"
+            app:subtitle="Services in Lagos"
+            app:subtitleTextColor="@color/colorOffWhite"
+            app:titleTextColor="@color/colorWhite"
+            android:background="@color/colorPrimaryDark"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        </android.support.v7.widget.Toolbar>
+
+        <SearchView
+            android:padding="2dp"
+            android:elevation="3dp"
+            android:queryHint="find a service"
+            android:layout_margin="10dp"
+            android:background="@drawable/rounded"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_below="@+id/app_bar"
+        android:id="@+id/refresher"
+        android:layout_marginTop="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/categoriesList"
+
+
+        app:layoutManager="android.support.v7.widget.GridLayoutManager"
+        android:layout_width="match_parent"
+        app:spanCount="3"
+        tools:listitem="@layout/content_category_list"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</RelativeLayout>

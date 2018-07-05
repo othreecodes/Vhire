@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:title="Info"
+        app:showAsAction="always"
+        android:id="@+id/sessions_info"
+        android:iconTint="@color/colorWhite"
+        android:icon="@drawable/ic_info_outline_white_48dp"
+        />
+
+</menu>

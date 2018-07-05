@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="ng.apk.vhire.ui.profile.ProfileFragment">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+
+        android:background="@color/colorPrimaryDark"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            app:title="Account"
+            app:subtitleTextColor="@color/colorOffWhite"
+            app:titleTextColor="@color/colorWhite"
+            android:background="@color/colorPrimaryDark"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        </android.support.v7.widget.Toolbar>
+
+
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <LinearLayout
+        android:layout_below="@id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <TextView
+
+
+            android:textSize="18sp"
+            android:padding="30dp"
+            android:textColor="@color/colorWhite"
+            android:layout_width="wrap_content"
+            android:text="We detected that no user account is present on this application"
+            android:layout_height="wrap_content"
+            />
+        <Button
+            android:id="@+id/signup"
+            android:textSize="20sp"
+            android:text="Create an account"
+            android:layout_marginBottom="30dp"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorPrimaryDark"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/signin"
+            android:textSize="20sp"
+            android:text="Sign in "
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorPrimaryDark"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</RelativeLayout>
